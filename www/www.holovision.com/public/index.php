@@ -183,7 +183,7 @@
         echo '<tbody>';
         foreach (get_loaded_extensions() as $i => $name) {
             echo '<tr class="odd" style="display: table-row;">';
-            echo '<td class="odd">', $name, '</td>';
+            echo '<td class="odd">', ($i + 1) . ' ' . $name, '</td>';
             echo '<td class="odd">', phpversion($name), '</td>';
             echo '</tr>';
         }
