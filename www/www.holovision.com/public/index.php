@@ -162,8 +162,8 @@
         if (extension_loaded('redis')) {
             try {
                 $redis = new Redis();
-                $redis->connect('192.168.16.3', 6379);
-                $redis->auth('123456');
+                $redis->connect('redis', 6379);
+                $redis->auth('holovision2023');
                 $info = $redis->info();
                 return $info['redis_version'];
             } catch (Exception $e) {
