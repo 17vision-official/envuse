@@ -2,7 +2,7 @@ version: "3.9"
 services:
   redis:
     image: holovision-redis:7.2
-    container_name: redis 7.2
+    container_name: redis7.2
     restart: always
     privileged: false
     volumes:
@@ -17,7 +17,7 @@ services:
 
   mysql: 
     image: holovision-mysql:8.2
-    container_name: mysql ${MYSQL_VERSION}
+    container_name: mysql${MYSQL_VERSION}
     restart: always
     privileged: false
     volumes:
@@ -34,7 +34,7 @@ services:
 
   php82:
     image: holovision-php:8.2
-    container_name: php 8.2
+    container_name: php8.2
     restart: always
     privileged: true
     volumes:
@@ -49,7 +49,7 @@ services:
 
   nginx:
     image: holovision-nginx:1.25.3
-    container_name: nginx ${NGINX_VERSION}
+    container_name: nginx${NGINX_VERSION}
     restart: always
     privileged: false
     ports:
